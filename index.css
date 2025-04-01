@@ -1,0 +1,94 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+    font-family: 'Lora',serif;
+}
+
+header {
+    background-color: black;
+    height: 66px;
+    color: white;
+}
+
+header *{
+    color: white;
+}
+
+header .logo{
+    float: left;
+    height: inherit;
+    margin-left: 2rem;
+    border: 1px;
+}
+
+header .logo-text{
+    margin: 8px;
+    font-family: 'Candal',serif;
+}
+
+header .logo-text span{
+    color: aqua;
+}
+
+header ul{
+    float: right;
+    margin: 10px;
+    padding: 0px;
+    list-style: none;
+    border: 1px;
+}
+
+
+header ul li{
+    float: left;
+}
+
+header ul li a{
+   display: block; 
+   padding: 11px;
+   font-size: 1.1rem;
+   text-decoration: none;
+}
+
+header ul li a:hover{
+    color: aqua;
+    transition: 0.5s;
+}
+
+header ul li ul{
+    position: absolute;
+    top:55px;
+    right: -8px;
+    width:110px;
+    display: none;
+}
+
+header ul li ul li{
+    width:100%;
+}
+
+header ul li ul li a{
+    padding: 12px;
+    color: black;
+}
+
+header ul li ul li a:hover{
+    background: black;
+}
+
+header ul li:hover ul{
+    display: block;
+}
+
+header ul li ul .logout:hover{
+    color: red;
+}
+
+
+
