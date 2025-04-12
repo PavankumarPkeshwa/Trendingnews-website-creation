@@ -281,6 +281,7 @@ header ul li ul a.logout:hover{
  .content .sidebar{
     width: 30%;
     float: right;
+    box-shadow: 1rem 1rem 1rem -1rem rgb(82, 80, 80);
  }
 
   .content .main-content .post{
@@ -329,6 +330,53 @@ header ul li ul a.logout:hover{
     transition: .25s;
  }
  
+.content .sidebar .section{
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
 
+ .text-input{
+    padding: .7rem 1rem;
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #c2c7ca;
+    outline: none;
+    color: #000000;
+    line-height: 2rem;
+    font-family: 'Lora',serif;
+    font-size: large;
+ }
 
- 
+ .content .sidebar .section .search{
+    margin-top: 80px;
+ }
+
+ .content .sidebar .section .topics ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+ }
+
+ .content .sidebar .section.topics ul li a{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid rgb(204, 195, 195);
+ }
+
+ .content .sidebar .section.topics ul li a:hover{
+    padding: 15px;
+    transition: all .3s;
+    color: rgb(239, 24, 4);
+ }
+
+ /* //footer section designing */
+ .footer{
+    background: #000000;
+    color: #ffffff;
+    height: 400px;
+ }
