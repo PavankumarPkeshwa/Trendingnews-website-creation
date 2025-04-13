@@ -3,9 +3,9 @@
     box-sizing: border-box;
 }
 
-html,
+
 body{
-    height: 90%;
+    height: 100%;
     padding: 0px;
     margin: 0px;
     background-color: white;
@@ -286,7 +286,7 @@ header ul li ul a.logout:hover{
 
  .content .sidebar{
     width: 30%;
-    float: right;
+    float: left;
     box-shadow: 1rem 1rem 1rem -1rem rgb(82, 80, 80);
  }
 
@@ -301,7 +301,7 @@ header ul li ul a.logout:hover{
   }
 
   .content h2:hover{
-    color: rgb(80, 175, 101);
+    color: rgb(225, 125, 17);
   }
   
   .content .main-content .post .post-image{
@@ -336,7 +336,7 @@ header ul li ul a.logout:hover{
     transition: .25s;
  }
  
-.content .sidebar .section{
+.content .sidebar.section{
     background: white;
     padding: 20px;
     border-radius: 5px;
@@ -346,7 +346,7 @@ header ul li ul a.logout:hover{
  .text-input{
     padding: .7rem 1rem;
     display: block;
-    width: 100%;
+    width: 90%;
     border-radius: 5px;
     border: 1px solid #c2c7ca;
     outline: none;
@@ -356,13 +356,13 @@ header ul li ul a.logout:hover{
     font-size: large;
  }
 
- .content .sidebar .section .search{
+ .content .sidebar .section.search{
     margin-top: 80px;
  }
 
- .content .sidebar .section .topics ul{
+ .content .sidebar .section.topics ul{
     margin: 0px;
-    padding: 0px;
+    padding: 20px;
     list-style: none;
  }
 
@@ -461,3 +461,23 @@ header ul li ul a.logout:hover{
         background: #006669;
         float: right;
 }
+
+
+/* Single page content Designing  */
+
+.content .main-content.single{
+    background: rgb(249, 247, 247);
+    padding: 20px 50px;
+    font-size: 1.1em;
+ }
+
+ .content .main-content.single .post-title{
+    text-align: center;
+    margin-bottom: 40px;
+ }
+
+ .content .sidebar .single{
+    padding: 0px 10px;
+ }
+
+
