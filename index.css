@@ -358,12 +358,22 @@ header ul li ul a.logout:hover{
 
  .content .sidebar .section.search{
     margin-top: 80px;
+    text-align: center;
  }
 
+ .content .sidebar .section.topics.single{
+    margin-top: 70px;
+    text-align: center;
+ }
+
+ .content .sidebar .section.topics {
+    text-align: center;
+ }
  .content .sidebar .section.topics ul{
     margin: 0px;
     padding: 20px;
     list-style: none;
+    text-align: center;
  }
 
  .content .sidebar .section.topics ul li a{
@@ -372,12 +382,11 @@ header ul li ul a.logout:hover{
     font-size: 20px;
     padding: 15px 0px 15px 0px;
     border-bottom: 1px solid rgb(204, 195, 195);
+    transition: all .3s;
  }
 
  .content .sidebar .section.topics ul li a:hover{
-    padding: 15px;
-    transition: all .3s;
-    color: rgb(239, 24, 4);
+      color: aquamarine;
  }
 
  /* //footer section designing */
@@ -469,6 +478,7 @@ header ul li ul a.logout:hover{
     background: rgb(249, 247, 247);
     padding: 20px 50px;
     font-size: 1.1em;
+    margin-bottom: 30px;
  }
 
  .content .main-content.single .post-title{
@@ -480,4 +490,33 @@ header ul li ul a.logout:hover{
     padding: 0px 10px;
  }
 
+ .content .popular .post{
+    margin-top: 10px;
+    padding-top: 10px;
+ }
 
+ .content .popular .post img{
+    height: 60px;
+    width: 75px;
+    float: left;
+    margin-right: 10px;
+ }
+
+
+ /* Sign in register page design   */
+
+ .auth-content{
+    width: 30%;
+    margin: 50px auto;
+    padding: 30px;
+    background: #d8d8d8;
+    border-radius: 10px;
+ }
+
+ .auth-content .form-tittle{
+    text-align: center;
+ }
+
+ .auth-content form div{
+    margin-bottom: 10px;
+ }
