@@ -35,6 +35,18 @@ a{
     color:#ffffff;
     border:1px solid transparent;
     border-radius:.25rem;
+    font-size: 1.1em;
+    font-family: 'Lora',serif;
+}
+
+.btn-big{
+    padding: .7rem 1.3rem;
+    line-height: 1.3rem;
+}
+
+.btn:hover{
+    color: #0e0d0d;
+    background: #f4f7f7;
 }
 /* header section designing */
 header {
@@ -199,95 +211,26 @@ header ul li ul a.logout:hover{
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
  }
-        /* Mobile view Design using media */
- @media only screen and (max-width: 768px) {
-    header{
-        position: relative;
-    }
-
-    header ul{
-        width:100%;
-        background-color: black;
-        max-height: 0px;
-        overflow: hidden;
-    }
-
-    .showing{
-        max-height: 100em;
-    }
-
-    header ul li{
-        width: 100%;
-    }
-    header ul li ul{
-        position: STATIC;
-        display: block;
-        width: 100%;
-    }
-
-    header ul li ul li a{
-        padding: 22px;
-        color: black;
-        background:rgb(247, 243, 243);
-    }
-   
-    header ul li ul li a.logout{
-        color: rgb(237, 58, 58);
-    }
-
-    header .bx-menu{
-        display: block;
-        right: 20px;
-        top: 20px;
-        font-size: 1.9rem;
-        position:absolute;
-    }
-
-    header ul li a:hover{
-        color: aqua;
-        transition: 0.5s;
-    }
-    
-        header ul.showing + .post-slider {
-            margin-top: 600px; /* Space to account for the menu */
-        }
-    
-        .post-slider {
-            position: relative; /* Ensure dynamic positioning works */
-        }
-    
-        .post-slider .next {
-            position: absolute;
-            right: 10px; /* Adjust as needed */
-            top: 50%; /* Center vertically */
-            transform: translateY(-50%);
-        }
-    
-        .post-slider .prev {
-            position: absolute;
-            left: 10px;
-            top: 50%; 
-            transform: translateY(-50%);
-        }
- }
-
 
  /* Recent Post Content  design  */
 
  .content{
     width: 90%;
     margin: 30px auto 30px;
+    border: 1px solid #f00f0f;
  }
 
  .content .main-content{
     width: 70%;
     float: left;
+    border: 1px solid #29f00f;
  }
 
  .content .sidebar{
     width: 30%;
     float: left;
     box-shadow: 1rem 1rem 1rem -1rem rgb(82, 80, 80);
+    border: 1px solid #400ff0;
  }
 
   .content .main-content .post{
@@ -344,16 +287,17 @@ header ul li ul a.logout:hover{
 }
 
  .text-input{
-    padding: .7rem 1rem;
+    padding: .5rem 1rem;
     display: block;
     width: 90%;
     border-radius: 5px;
     border: 1px solid #c2c7ca;
     outline: none;
     color: #000000;
-    line-height: 2rem;
+    line-height: 1.3rem;
     font-family: 'Lora',serif;
     font-size: large;
+    margin-left: 20px;
  }
 
  .content .sidebar .section.search{
@@ -519,4 +463,202 @@ header ul li ul a.logout:hover{
 
  .auth-content form div{
     margin-bottom: 10px;
+ }
+
+ .auth-content form p {
+    text-align: center;
+ }
+ 
+ .auth-content form p a{
+    text-decoration: underline;
+ }
+
+  /* login message design  */
+  .msg{
+    width: 100%;
+    margin: 5px auto;
+    padding: 8px;
+    border-radius: 5px;
+    list-style: none;
+  }
+
+  .success{
+    color: #070e0f;
+    border: 1px solid greenyellow;
+    background: #5fda46;
+  }
+
+  .error{
+    color: #ffffff;
+    border: 1px solid rgb(244, 35, 35);
+    background: #d57772;
+  }
+
+        /* Mobile view Design using media */
+@media only screen and (max-width: 768px) {
+            header{
+                position: relative;
+            }
+        
+            header ul{
+                width:100%;
+                background-color: black;
+                max-height: 0px;
+                overflow: hidden;
+            }
+        
+            .showing{
+                max-height: 100em;
+            }
+        
+            header ul li{
+                width: 100%;
+            }
+            header ul li ul{
+                position: STATIC;
+                display: block;
+                width: 100%;
+            }
+        
+            header ul li ul li a{
+                padding: 22px;
+                color: black;
+                background:rgb(247, 243, 243);
+            }
+           
+            header ul li ul li a.logout{
+                color: rgb(237, 58, 58);
+            }
+        
+            header .bx-menu{
+                display: block;
+                right: 20px;
+                top: 20px;
+                font-size: 1.9rem;
+                position:absolute;
+            }
+        
+            header ul li a:hover{
+                color: aqua;
+                transition: 0.5s;
+            }
+            
+                header ul.showing + .post-slider {
+                    margin-top: 600px; /* Space to account for the menu */
+                }
+            
+                .post-slider {
+                    position: relative; /* Ensure dynamic positioning works */
+                }
+            
+                .post-slider .next {
+                    position: absolute;
+                    right: 10px; /* Adjust as needed */
+                    top: 50%; /* Center vertically */
+                    transform: translateY(-50%);
+                }
+            
+                .post-slider .prev {
+                    position: absolute;
+                    left: 10px;
+                    top: 50%; 
+                    transform: translateY(-50%);
+                }
+ }
+
+ @media only screen and (max-width: 1016px){
+    header {
+        background-color: black;
+        height: 40px;
+        color: white;
+    }
+    
+    header *{
+        color: white;
+    }
+    
+    header .bx-menu{
+        display: none;
+    }
+    
+    header .logo{
+        float: left;
+        height: inherit;
+        margin-left: 2rem;
+        border: 1px;
+    }
+    
+    header .logo-text{
+        font-size: 20px;
+        margin: 8px;
+        font-family: 'Candal',serif;
+    }
+    
+    header .logo-text span{
+        color: aqua;
+    }
+    
+    header ul{
+        float: right;
+        margin: 8px;
+        padding: 0px;
+        list-style: none;
+        border: 1px;
+    }
+    
+    header ul li{
+        float: left;
+    }
+    
+    header ul li a{
+       display: block; 
+       padding: 3px;
+       font-size: 1.1rem;
+       text-decoration: none;
+    }
+    
+    header ul li a:hover{
+        color: aqua;
+        transition: 0.5s;
+    }
+    
+    header ul li ul{
+        position: absolute;
+        top:55px;
+        right: -4px;
+        width:70px;
+        display: none;
+        z-index: 88888;
+    }
+    
+    header ul li ul li{
+        width:100%;
+    }
+    
+    
+    header ul li ul li a:hover{
+        background: black;
+    }
+    
+    .hidden {
+        display: none; /* Hide the dropdown by default */
+    }
+    
+    .visible {
+        display: block; /* Show the dropdown when toggled */
+    }
+    
+    
+    header ul li ul li a{
+        padding: 12px;
+        color: black;
+    }
+    
+    header ul li ul a.logout:hover{
+        color: red;
+    }  
+
+    .content{
+            width: 100%;
+        }
  }
