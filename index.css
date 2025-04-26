@@ -566,99 +566,100 @@ header ul li ul a.logout:hover{
                 }
  }
 
- @media only screen and (max-width: 1016px){
-    header {
-        background-color: black;
-        height: 40px;
-        color: white;
+ @media only screen and (max-width: 934px) {
+
+    header{
+        position: relative;
     }
-    
-    header *{
-        color: white;
-    }
-    
-    header .bx-menu{
-        display: none;
-    }
-    
-    header .logo{
-        float: left;
-        height: inherit;
-        margin-left: 2rem;
-        border: 1px;
-    }
-    
-    header .logo-text{
-        font-size: 20px;
-        margin: 8px;
-        font-family: 'Candal',serif;
-    }
-    
-    header .logo-text span{
-        color: aqua;
-    }
-    
+
     header ul{
-        float: right;
-        margin: 8px;
-        padding: 0px;
-        list-style: none;
-        border: 1px;
+        width:100%;
+        background-color: black;
+        max-height: 0px;
+        overflow: hidden;
     }
-    
+
+    .showing{
+        max-height: 100em;
+    }
+
     header ul li{
-        float: left;
+        width: 100%;
     }
-    
-    header ul li a{
-       display: block; 
-       padding: 3px;
-       font-size: 1.1rem;
-       text-decoration: none;
+    header ul li ul{
+        position: STATIC;
+        display: block;
+        width: 100%;
     }
-    
+
+    header ul li ul li a{
+        padding: 22px;
+        color: black;
+        background:rgb(247, 243, 243);
+    }
+   
+    header ul li ul li a.logout{
+        color: rgb(237, 58, 58);
+    }
+
+    header .bx-menu{
+        display: block;
+        right: 20px;
+        top: 20px;
+        font-size: 1.9rem;
+        position:absolute;
+    }
+
     header ul li a:hover{
         color: aqua;
         transition: 0.5s;
     }
     
-    header ul li ul{
-        position: absolute;
-        top:55px;
-        right: -4px;
-        width:70px;
-        display: none;
-        z-index: 88888;
-    }
+        header ul.showing + .post-slider {
+            margin-top: 600px; /* Space to account for the menu */
+        }
     
-    header ul li ul li{
-        width:100%;
-    }
+        .post-slider {
+            position: relative; /* Ensure dynamic positioning works */
+        }
     
+        .post-slider .next {
+            position: absolute;
+            right: 10px; /* Adjust as needed */
+            top: 50%; /* Center vertically */
+            transform: translateY(-50%);
+        }
     
-    header ul li ul li a:hover{
-        background: black;
-    }
-    
-    .hidden {
-        display: none; /* Hide the dropdown by default */
-    }
-    
-    .visible {
-        display: block; /* Show the dropdown when toggled */
-    }
-    
-    
-    header ul li ul li a{
-        padding: 12px;
-        color: black;
-    }
-    
-    header ul li ul a.logout:hover{
-        color: red;
-    }  
+        .post-slider .prev {
+            position: absolute;
+            left: 10px;
+            top: 50%; 
+            transform: translateY(-50%);
+        }
 
     .content{
-            width: 100%;
-        }
- }
+        width:100%
+    }
+
+    .content .main-content{
+        width: 100%;
+        padding: 10px;
+     }
+
+     .content .sidebar{
+        width: 100%;
+        padding: 10px;
+     }
+
+     .content .sidebar .section.search{
+        margin-top: 30px;
+     }
+    
+     .content .main-content .post{
+        width: 100%;
+      }
+}
+
+
+
+ 
