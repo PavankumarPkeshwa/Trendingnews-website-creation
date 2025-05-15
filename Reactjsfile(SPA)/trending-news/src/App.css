@@ -3,15 +3,6 @@
     box-sizing: border-box;
 }
 
-
-body{
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    background-color: white;
-    font-family: 'Lora',serif;
-}
-
 h1,h2,h3,h4,h5,h6{
     font-family: 'Candal',serif;
     color: #000000;
@@ -139,155 +130,163 @@ header ul li ul a.logout:hover{
     color: red;
 }
 
- /* Post Slider design*/
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9f9;
+}
 
+/* Post Slider */
 .post-slider {
-  width: 87%; /* Ensures slider is slightly smaller than full width */
-  margin:auto;
+  margin: 30px;
+  position: relative;
   text-align: center;
 }
 
+.post-slider .slider-title {
+  margin-bottom: 20px;
+}
 
-.post-slider .post-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.post-slider .slick-list {
+  padding: 10px 0 !important;
 }
 
 .post-slider .post {
-  width: 300px;
-  height: 350px;
-  margin: 20px;
-  background: #fff;
+  background: white;
+  padding: 0px;
   border-radius: 10px;
-  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.3);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+  margin: 0 13px; /* Add spacing between posts */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-slider .post:hover {
+transform: scale(1.05); /* Zoom in */
+box-shadow: 0px 16px 25px rgba(0, 0, 0, 0.3); /* Optional: stronger shadow on hover */
 }
 
 .post-slider .slider-image {
   width: 100%;
-  height: 00px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;
+  border-radius: 1px;
 }
 
-.post-slider .post-meta {
-  font-size: 14px;
-  color: #555;
-  margin-top: 10px;
-}
-
-.post-slider .post-meta i {
-  margin-right: 5px;
-  color: #111112;
-}
-
-.post-slider .post h4 a {
-  color: #333;
-  transition: 0.3s;
-}
-
-.post-slider .post h4 a:hover {
-  color: #ed1405d0;
-}
-
-.post-slider .post h4 i {
-  font-size: 16px;
-  margin-left: 5px;
-  color: #121313;
-}
-/* Ensuring spacing between slides */
-.slick-slide {
-  margin: 4px;
-}
-
-/* Styling next & prev arrows */
-.slick-prev, .slick-next {
-  font-size: 2.5rem;
-  color: black;
-  cursor: pointer;
-}
-
-.post-slider .post-info {
+.post-info {
   padding: 10px;
-  text-align: left;
-  padding-bottom: 40px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
 }
 
-.post-slider .post-meta {
-  font-size: 14px;
-  color: #555;
+.post-meta {
+  color: #666;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
   margin-top: 5px;
 }
 
+.post-meta i {
+  margin-right: 5px;
+}
 
- /* Recent Post Content  design  */
+/* Slick Carousel Dots */
+.post-slider .slick-dots {
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
 
- .content{
-    width: 90%;
-    margin: 30px auto 30px;
- }
+.post-slider .slick-dots li {
+  margin: 0 5px;
+}
 
- .content .main-content{
-    width: 70%;
-    float: left;
- }
+.post-slider .slick-dots li button {
+  font-size: 10px;
+  background: #005255;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+.post-slider .slick-dots li.slick-active button {
+  background: #ff6600;
+}
+
+/* Content Section */
+.content {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.main-content {
+  width: 70%;
+  float: left;
+}
 
  .content .sidebar{
     width: 30%;
-    float: left;
+    float: right;
     box-shadow: 1rem 1rem 1rem -1rem rgb(82, 80, 80);
  }
 
-  .content .main-content .post{
-    width: 95%;
-    height: 300px;
-    margin: 20px auto;
-    border-radius: 5px;
-    background: white;
-    position: relative;
-    box-shadow: 1rem 1rem 1rem -1rem rgb(40, 39, 39);
-  }
+.main-content .post {
+  width: 95%;
+  height: 300px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 1rem 1rem 1rem -1rem rgb(40, 39, 39);
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .content h2:hover{
-    color: rgb(225, 125, 17);
-  }
-  
-  .content .main-content .post .post-image{
-    width: 40%;
-    height: 100%;
-    float: left;
-  }
+.main-content .post:hover{
+transform: scale(1.05); /* Zoom in */
+box-shadow: 0px 16px 25px rgba(0, 0, 0, 0.3); /* Optional: stronger shadow on hover */
+}
 
-  .content .main-content .post .post-preview{
-    width: 60%;
-    padding: 10px;
-    float: right;
-  }
+.post-image {
+  width: 40%;
+  height: 100%;
+  float: left;
+  border-radius: 5px;
+}
+.post-preview {
+  width: 60%;
+  padding: 10px;
+  float: right;
+  box-sizing: border-box;
+  position: relative; /* Required for absolute child positioning */
+  height: 100%;
+}
 
- .content .main-content .recent-post-title{
-    margin: 20px;
- }
 
- .content .main-content .post .read-more{
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    border: 1px solid #005255;
-    background: transparent;
-    border-radius: 5px;
-    color: #005255 !important;
- }
+.read-more {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 8px 12px;
+  border: 1px solid #005255;
+  background: transparent;
+  border-radius: 5px;
+  color: #005255;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s;
+}
 
- .content .main-content .post .read-more:hover{
-    background: #006669;
-    color: white!important;
-    transition: .25s;
- }
- 
+.read-more:hover {
+  background: #006669;
+  color: white;
+}
+
 .content .sidebar.section{
     background: white;
     padding: 20px;
@@ -342,6 +341,7 @@ header ul li ul a.logout:hover{
  .content .sidebar .section.topics ul li a:hover{
       color: aquamarine;
  }
+
 
  /* //footer section designing */
  .footer{
@@ -421,8 +421,10 @@ header ul li ul a.logout:hover{
 }
 
 .footer .footer-content .contact-form .contact-btn{
-        background: #006669;
-        float: right;
+    background: #006669;
+    display:inline-block;       /* makes it behave like a block element */
+    width: 50%;          /* optional: full width */
+    margin-top: 10px;   
 }
 
 
